@@ -4,6 +4,10 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
+
+// Branch import
+declare var Branch;
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -17,6 +21,20 @@ export class MyApp {
       statusBar.styleDefault();
       splashScreen.hide();
     });
+
+    platform.resume.subscribe(() => {
+      branchInit();
+    });
+
+    // Branch initialization
+    const branchInit = () => {
+      // only on devices
+      if (!platform.is('cordova')) { return }
+      Branch.initSession(data => {
+        // read deep link data on click
+        alert('Deep Link Data: ' + JSON.stringify(data));
+      });
+    }
   }
 }
 
