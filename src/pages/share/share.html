@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>My share page</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      Link
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-input type="text" placeholder="link alias"></ion-input>
+      </ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col><button ion-button color="light" block (tap)='linkShare();'>Share</button></ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
