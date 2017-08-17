@@ -5,7 +5,7 @@ This is a simple Ionic app with [Branch](https://branch.io) integrated.
 $ sudo npm install -g ionic cordova
 ```
 
-Then, to run it, cd into `ionic-branch-test and run:
+Then, to run it, cd into `ionic-branch-test` and run:
 
 ```bash
 $ ionic cordova platform add ios
