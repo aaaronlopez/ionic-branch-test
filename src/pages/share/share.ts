@@ -52,15 +52,7 @@ export class SharePage {
         feature: 'onboarding',
         campaign: 'content 123 launch',
         stage: 'new user',
-        tags: ['one', 'two', 'three']
-      }
-
-      // optional fields
-      var properties = {
-        $desktop_url: 'http://www.example.com/desktop',
-        more_custom: 'data',
-        even_more_custom: true,
-        this_is_custom: 41231
+        tags: ['one', 'two', 'three'],
       }
 
       var message = 'Check out this link'
